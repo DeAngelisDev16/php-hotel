@@ -57,6 +57,14 @@
 
     <div class="container">
         <h1>Hotels:</h1>
+        <div class="hotel_container">
+            <?php
+            foreach ($hotels as $element) {
+                echo "<p>{$element['name']}</p>";
+            }
+
+            ?>
+        </div>
 
     </div>
 
