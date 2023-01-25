@@ -55,20 +55,28 @@
 
     ?>
 
+    <h1>Hotels:</h1>
     <div class="container">
-        <h1>Hotels:</h1>
-        <div class="hotel_container">
-            <?php
-            foreach ($hotels as $element) {
-                echo "<p>{$element['name']}</p>";
-                echo "<p>{$element['description']}</p>";
-                echo "<p>{$element['parking']}</p>";
-                echo "<p>{$element['vote']}</p>";
-                echo "<p class='hotels_margin'>{$element['distance_to_center']}</p>";
-            }
 
-            ?>
-        </div>
+
+
+        <?php
+
+        foreach ($hotels as $element) {
+            echo "<div class='hotel_card'>";
+            echo "<p>{$element['name']}</p>";
+            echo "<p>{$element['description']}</p>";
+            //echo "<p>{$element['parking']}</p>";
+            echo "<p>voto:{$element['vote']}</p>";
+            echo "<p class='hotels_margin'>distanza dal centro:{$element['distance_to_center']}km</p>";
+            echo "</div>";
+        }
+
+        ?>
+
+
+
+
 
     </div>
 
