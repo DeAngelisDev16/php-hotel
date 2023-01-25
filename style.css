@@ -15,3 +15,11 @@ h1 {
     margin: auto;
     text-align: center;
 }
+
+.hotel_container {
+    padding: 2rem;
+}
+
+.hotels_margin {
+    margin-bottom: 2rem;
+}

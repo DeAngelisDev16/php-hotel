@@ -61,6 +61,10 @@
             <?php
             foreach ($hotels as $element) {
                 echo "<p>{$element['name']}</p>";
+                echo "<p>{$element['description']}</p>";
+                echo "<p>{$element['parking']}</p>";
+                echo "<p>{$element['vote']}</p>";
+                echo "<p class='hotels_margin'>{$element['distance_to_center']}</p>";
             }
 
             ?>
